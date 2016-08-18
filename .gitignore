@@ -1,0 +1,15 @@
+# Only .md, .java and .gradle files
+
+
+# ignore everything
+*
+
+# but directories
+!*/
+
+# and then whitelist the files and extensions we need
+!.gitignore
+!*.java
+!*.md
+!build.gradle
+
