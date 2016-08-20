@@ -4,6 +4,8 @@ Bulls and Cows
 Table of contents
  - [Introduction](#introduction)
  - [Building and running](#building-and-running)
+     - [Java](#java)
+     - [OCaml](#ocaml)
  - [Rules](#rules)
  - [Example session](#example-session)
  - [Other](#other)
@@ -18,6 +20,7 @@ I saw this Wikipedia entry: [Bulls and Cows](https://en.wikipedia.org/wiki/Bulls
 
 ## Building and running
 
+### Java
 A basic gradle script is provided:
 ```
 $ cd bullsAndCows
@@ -25,12 +28,20 @@ $ gradle build
 $ java -jar build/libs/bullsAndCows.jar
 ```
 
-Alternatively, bu hand:
+Alternatively, by hand:
 ```
 $ cd bullsAndCows/src/main/java
 $ javac MainCLI.java
 $ jar cfe bullsAndCows.jar MainCLI *.class
 $ java -jar build/libs/bullsAndCows.jar
+```
+
+### OCaml
+Using ocamlbuild:
+```
+$ cd bullsAndCows/ocaml
+$ ocamlbuild -use-ocamlfind bullsandcows.native
+$ ./bullsandcows.native
 ```
 
 

@@ -1,4 +1,5 @@
 # Only .md, .java and .gradle files
+# Also OCaml files .ml and _tags
 
 
 # ignore everything
@@ -12,4 +13,5 @@
 !*.java
 !*.md
 !build.gradle
-
+!*.ml
+!_tags
