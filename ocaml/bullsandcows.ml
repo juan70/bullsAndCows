@@ -31,9 +31,7 @@ let pluralize n =
 
 (** Compose a simply formatted report for bulls and cows. *)
 let report bc =
-  let bulls = fst bc
-  and cows = snd bc
-  in
+  let (bulls, cows) = bc in
   Printf.sprintf "> %d bull%s, %d cow%s\n"
                  bulls (pluralize bulls) cows (pluralize cows)
 
